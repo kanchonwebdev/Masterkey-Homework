@@ -1,0 +1,180 @@
+.header {
+    width: 100%;
+    padding: calc(30px + (60 - 30) * ((100vw - 320px) / (1920 - 320))) 5%;
+
+    .topbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .logo {
+            font-weight: 600;
+            font-size: calc(25px + (45 - 25) * ((100vw - 320px) / (1920 - 320)));
+            text-transform: uppercase;
+        }
+
+        .language-switcher {
+            display: grid;
+            align-items: flex-end;
+            //gap: calc(8px + (15 - 8) * ((100vw - 320px) / (1920 - 320)));
+            grid-template-columns: repeat(3, 1fr);
+
+            @include max-width-1023 {
+                margin-right: 50px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+
+                &.bn {
+                    color: #008000;
+                }
+            }
+
+            .v-line {
+                width: 3px;
+                background: #000;
+                height: 100%;
+                transform: rotate(10deg);
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-content: space-between;
+        margin-top: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+
+        @include max-width-1023 {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+            max-width: fit-content;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+        .nav {
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                .nav-item {
+                    font-size: calc(16 + (19 - 16) * ((100vw - 1024px) / (1920 - 1024)));
+
+                    a {
+                        text-decoration: none;
+                        color: #644F9C;
+                        font-weight: 600;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            color: #FF6F00;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        padding-right: calc(25px + (80 - 25) * ((100vw - 1024px) / (1920 - 1024)));
+                    }
+                }
+            }
+
+            @include max-width-1023 {
+                display: none;
+            }
+        }
+
+        .right-col {
+            padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) calc(12px + (13 - 12) * ((100vw - 320px) / (1920 - 320)));
+            border-radius: 50px;
+            background: #fff;
+            box-shadow: 0px 3px 5px #808080a6;
+
+            .btn {
+                text-decoration: none;
+                color: #000;
+                padding: calc(5px + (8 - 5) * ((100vw - 320px) / (1920 - 320))) calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+                border-radius: 50px;
+                text-transform: uppercase;
+
+                &.red {
+                    background: #FF6F00;
+                    color: #fff;
+                    box-shadow: 0px 3px 5px #808080;
+                }
+            }
+        }
+    }
+}
+
+/* Nav Overlay Menu script */
+@include max-width-1023 {
+    #toggle {
+        display: flex !important;
+        z-index: 99;
+        position: fixed !important;
+        margin-left: unset !important;
+        right: 0px !important;
+        margin-right: 5%;
+    }
+}
+
+.nav-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #FF6F00;
+    z-index: 99;
+    overflow: hidden;
+    transition: 1s;
+    transition-delay: 1s;
+    width: 0px;
+
+    ul {
+        list-style: none;
+
+        li {
+            transform: translateX(200px);
+            opacity: 0;
+            transition: .5s;
+            transition-delay: calc(0.15s * var(--i));
+
+            &:not(:last-child) {
+                margin-bottom: calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320)));
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
+
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+
+    &.active {
+        width: 100%;
+        transition-delay: 0s;
+
+        ul {
+            li {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masterkey Technologies Homework - Task Two</title>
+
+    <meta name="description" content="" />
+    <link rel="alternate" href="#" hreflang="en" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="Masterkey Technologies Homework - Task One">
+    <meta property="og:description" content="Masterkey Technologies Homework - Task One">
+    <!-- ./Open Graph / Facebook -->
+
+    <!-- Css Files -->
+    <!--#include virtual="includes/css/css-bundle.h" -->
+    <!-- Css Files END -->
+</head>
+
+<body>
+    <div class="container" id="home">
+        <!-- Header section -->
+        <!--#include virtual="includes/nav.h" -->
+        <!-- Header Section END -->
+
+        <!-- Hero section -->
+        <div class="hero-secion">
+            <div class="hero-wrapper">
+                <div class="left-col">
+                    <h1 class="main-title">Lorem ipsum dolor site</h1>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis repellat
+                        suscipit
+                        quis, amet reprehenderit assumenda et maxime saepe, sed facere. Dolores consequuntur nemo amet.
+                        Soluta mollitia suscipit sunt labore.</p>
+                </div>
+
+                <div class="right-col">
+                    <div class="artwork">
+                        <img src="https://dummyimage.com/900x500/000/fff" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-wrapper">
+                <div class="left-col">
+                    <h1 class="main-title">Lorem ipsum dolor site</h1>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis repellat
+                        suscipit
+                        quis, amet reprehenderit assumenda et maxime saepe, sed facere. Dolores consequuntur nemo amet.
+                        Soluta mollitia suscipit sunt labore.</p>
+                </div>
+
+                <div class="right-col">
+                    <div class="artwork">
+                        <img src="https://dummyimage.com/900x500/000/fff" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-wrapper">
+                <div class="left-col">
+                    <h1 class="main-title">Lorem ipsum dolor site</h1>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis repellat
+                        suscipit
+                        quis, amet reprehenderit assumenda et maxime saepe, sed facere. Dolores consequuntur nemo amet.
+                        Soluta mollitia suscipit sunt labore.</p>
+                </div>
+
+                <div class="right-col">
+                    <div class="artwork">
+                        <img src="https://dummyimage.com/900x500/000/fff" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Hero section -->
+
+        <div class="section box-container">
+            <div class="box">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Demo Title</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quis ducimus eum animi iure
+                        laboriosam nobis laborum accusantium. Temporibus voluptatibus alias cum laborum nihil dolor
+                        officiis
+                        molestias deleniti voluptate labore.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Demo Title</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quis ducimus eum animi iure
+                        laboriosam
+                        nobis laborum accusantium. Temporibus voluptatibus alias cum laborum nihil dolor officiis
+                        molestias
+                        deleniti
+                        voluptate labore.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Demo Title</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quis ducimus eum animi iure
+                        laboriosam
+                        nobis laborum accusantium. Temporibus voluptatibus alias cum laborum nihil dolor officiis
+                        molestias
+                        deleniti
+                        voluptate labore.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <!--#include virtual="includes/footer.h" -->
+        <!-- Footer Section END -->
+
+        <!-- Loader Section -->
+        <!--#include virtual="includes/loader.h" -->
+        <!-- Loader Section END -->
+
+        <!-- Scroll top -->
+        <!--#include virtual="includes/scroll-top.h" -->
+        <!-- Scroll Top END -->
+
+        <!-- Js File -->
+        <!--#include virtual="includes/js/js-bundle.h" -->
+        <!-- Js File END -->
+
+        <script>
+            /* Slick slider */
+            $('.hero-secion').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            /* Slick slider END */
+
+            /* Arrow Icon Insert  for Slider */
+            document.querySelector('.slick-prev').innerHTML = "<img src='assets/icons/arrow-left.svg' alt='prev'>";
+            document.querySelector('.slick-next').innerHTML = "<img src='assets/icons/arrow-right.svg' alt='next'>";
+            /* Arrow Icon Insert  for Slider */
+
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </div>
+</body>
+
+</html>
