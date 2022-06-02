@@ -1,11 +1,11 @@
 <div class="footer">
     <div class="footer-block">
-        <div class="footer-header">We are social</div>
+        <div class="footer-header wow fadeInUp">We are social</div>
 
         <div class="box">
-            <div class="text-title">Follow us</div>
+            <div class="text-title wow fadeInUp">Follow us</div>
 
-            <a href="#" class="icon">
+            <a href="#" class="icon wow fadeInUp">
                 <span class="svg-icon">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                         y="0px" viewBox="0 0 455.73 455.73" style="enable-background:new 0 0 455.73 455.73;" xml:space="preserve">
@@ -48,7 +48,7 @@
                     </svg>
                 </span>
             </a>
-            <a href="#" class="icon">
+            <a href="#" class="icon wow fadeInUp">
                 <span class="svg-icon">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                         y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
@@ -58,7 +58,7 @@
                     </svg>
                 </span>
             </a>
-            <a href="#" class="icon">
+            <a href="#" class="icon wow fadeInUp">
                 <span class="svg-icon">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                         y="0px" viewBox="0 0 242.667 242.667" style="enable-background:new 0 0 242.667 242.667;" xml:space="preserve">
@@ -70,38 +70,38 @@
             </a>
         </div>
 
-        <div class="logo">Logo</div>
+        <div class="logo wow fadeInUp">Logo</div>
     </div>
 
     <div class="footer-block">
-        <div class="footer-header">Links</div>
+        <div class="footer-header wow fadeInUp">Links</div>
 
         <ul class="nav-menu">
-            <li class="nav-link"><a href="#">ADVERTISERS</a></li>
-            <li class="nav-link"><a href="#">PUBLISHERS</a></li>
-            <li class="nav-link"><a href="#">INFLUENCERS</a></li>
-            <li class="nav-link"><a href="#">AD FORMATS</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">ADVERTISERS</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">PUBLISHERS</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">INFLUENCERS</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">AD FORMATS</a></li>
         </ul>
     </div>
 
     <div class="footer-block">
-        <div class="footer-header">Documentation</div>
+        <div class="footer-header wow fadeInUp">Documentation</div>
     
         <ul class="nav-menu">
-            <li class="nav-link"><a href="#">TERMS & CONDITIONS</a></li>
-            <li class="nav-link"><a href="#">PRIVACY POLICY</a></li>
-            <li class="nav-link"><a href="#">CANCELLATION POLICY</a></li>
-            <li class="nav-link"><a href="#">BLOG</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">TERMS & CONDITIONS</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">PRIVACY POLICY</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">CANCELLATION POLICY</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">BLOG</a></li>
         </ul>
     </div>
     
     <div class="footer-block">
-        <div class="footer-header">Support</div>
+        <div class="footer-header wow fadeInUp">Support</div>
     
         <ul class="nav-menu">
-            <li class="nav-link"><a href="#">FAQ</a></li>
-            <li class="nav-link"><a href="#">MEDIA KIT</a></li>
-            <li class="nav-link"><a href="#">CONTACT US</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">FAQ</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">MEDIA KIT</a></li>
+            <li class="nav-link wow fadeInUp"><a href="#">CONTACT US</a></li>
         </ul>
     </div>
 </div>
